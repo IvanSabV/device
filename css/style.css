@@ -1,0 +1,64 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans Light', 'Helvetica Neue', sans-serif;
+}
+
+
+header {
+    background: #f0c52e80;
+    height: 300px;
+    width: 1160px;
+    margin: 31px auto auto auto;
+}
+
+.container {
+    width: 1040px  ;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-top: -21px;
+}
+
+.search {
+    margin-top: 36px;
+    color: #0000004d;
+}
+
+nav {
+    font-family: Gilroy ExtraBold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 51px;
+    font-size: 18px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+span {
+    margin-left: 20px;
+    padding: 0%;
+
+}
+
+.catalog {
+    float: left;
+    padding: 0;
+
+}
+
+.container_right {
+    /*width: 500px;*/
+    float: right;
+}
+
+.container_right li {
+    float: left;
+    display: block;
+    margin-right: 38px;
+}
+
