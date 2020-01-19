@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Open Sans Light', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
 }
 
 
@@ -21,20 +22,43 @@ header {
     margin-top: -21px;
 }
 
-.search {
-    margin-top: 36px;
+.search_text {
+    
     color: #0000004d;
+}
+
+.search {
+    float: left;
+    padding: 0;
+}
+
+.up {
+    margin-top: 36px;
+}
+
+.menu_up img {
+    margin-right: 12px;
+}
+
+.container_cart {
+    float: right;
+}
+
+.container_cart li {
+    float: left;
+    display: block;
+    margin-left: 41px;
 }
 
 nav {
     font-family: Gilroy ExtraBold;
     text-transform: uppercase;
     letter-spacing: 4px;
-    margin-top: 51px;
+    padding-top: 51px;
     font-size: 18px;
 }
 
-nav a {
+a {
     color: black;
     text-decoration: none;
 }
@@ -48,17 +72,54 @@ span {
 .catalog {
     float: left;
     padding: 0;
-
 }
 
 .container_right {
-    /*width: 500px;*/
     float: right;
 }
 
 .container_right li {
+    float: right;
+    display: block;
+}
+
+.container_left {
+    float: left;
+}
+
+.container_left li {
     float: left;
     display: block;
     margin-right: 38px;
 }
 
+.menu {
+    width: 500px;
+    float: right;
+}
+
+.clearfix {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu_up {
+    width: 500px;
+    float: right;
+}
+
+.rect {
+    width: 100px;
+    height: 7px;
+    background-color: #fff;
+    margin-top: 92px;
+    margin-left: 540px
+    ;
+}
