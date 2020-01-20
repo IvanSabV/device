@@ -58,6 +58,16 @@ nav {
     font-size: 18px;
 }
 
+.button {
+    font-family: Gilroy ExtraBold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 18px;
+    text-align: center;
+    width: fit-content;
+    float: left;    
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -122,4 +132,49 @@ ul {
     margin-top: 92px;
     margin-left: 540px
     ;
+}
+
+h1 {
+    font-family: Gilroy ExtraBold;
+    font-size: 47px;
+    line-height: 56px;
+    margin: 0;
+}
+
+.sli__text {
+    width: 500px;
+    float: right;
+    margin-top: -32px;
+    position: relative;
+}
+
+.descr {
+    line-height: 30px;
+    margin: 30px 0 60px 0;
+    
+}
+
+.rect__1 {
+    width: 220px;
+    height: 8px;
+    background-color: #f0c52e;
+    margin-top: -16px;
+}
+
+.pag {
+    float: right;
+}
+
+.pag li {
+    margin-right: 21px;
+    display: block;
+    float: left;
+}
+
+.num {
+    font-size: 179px;
+    color: black;
+    font-family: Gilroy ExtraBold;
+    position: absolute;
+
 }
