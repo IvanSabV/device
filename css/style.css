@@ -3,6 +3,8 @@ body {
     margin: 0;
     font-family: 'Open Sans Light', 'Helvetica Neue', sans-serif;
     font-size: 15px;
+    width: 1160px;
+    margin: auto;
 }
 
 
@@ -16,6 +18,7 @@ header {
 .container {
     width: 1040px  ;
     margin: 0 auto;
+    position: relative;
 }
 
 .logo {
@@ -51,7 +54,7 @@ header {
 }
 
 nav {
-    font-family: Gilroy ExtraBold;
+    font-family: 'Gilroy ExtraBold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     padding-top: 51px;
@@ -59,7 +62,7 @@ nav {
 }
 
 .button {
-    font-family: Gilroy ExtraBold;
+    font-family: 'Gilroy ExtraBold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 18px;
@@ -134,8 +137,22 @@ ul {
     ;
 }
 
+.slider {
+    height: 431px;
+}
+
+.sli__img {
+    float: left;
+}
+
+.sli__img img {
+    height: 100%;
+    width: 100%;
+    margin-top: -107px;
+}
+
 h1 {
-    font-family: Gilroy ExtraBold;
+    font-family: 'Gilroy ExtraBold', sans-serif;
     font-size: 47px;
     line-height: 56px;
     margin: 0;
@@ -150,7 +167,7 @@ h1 {
 
 .descr {
     line-height: 30px;
-    margin: 30px 0 60px 0;
+    margin: 22px 0 45px 0;
     
 }
 
@@ -173,8 +190,34 @@ h1 {
 
 .num {
     font-size: 179px;
-    color: black;
-    font-family: Gilroy ExtraBold;
+    color: #fff;
+    font-family: 'Gilroy ExtraBold', sans-serif;
     position: absolute;
-
+    bottom: 62%;
+    left: 65.5%;
 }
+
+.ch {
+    font-family: 'Gilroy Light', sans-serif;
+    font-size: 36px;
+    margin: 0;
+}
+
+.charact li {
+    display: block;
+    float: left;
+    margin-right: 80px;
+}
+
+.charact {
+    position: absolute;
+    width: 510px;
+    margin: 80px 0 0 0;
+}
+
+.ch__de {
+    font-family: 'Open Sans Light', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
