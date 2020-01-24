@@ -3,7 +3,6 @@ body {
     margin: 0;
     font-family: 'Open Sans Light', 'Helvetica Neue', sans-serif;
     font-size: 15px;
-    width: 1160px;
     margin: auto;
 }
 
@@ -63,16 +62,6 @@ header {
     font-size: 18px;
     display: flex;
     justify-content: space-between;
-}
-
-.button {
-    font-family: 'Gilroy ExtraBold', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 18px;
-    text-align: center;
-    width: fit-content;
-    float: left;    
 }
 
 a {
@@ -158,16 +147,26 @@ h1 {
     
 }
 
-.rect__1 {
+.button {
+    font-family: 'Gilroy ExtraBold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 18px;
+}
+
+.rect-1 {
     width: 220px;
     height: 8px;
     background-color: #f0c52e;
-    margin-top: -16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .butt {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .pag {
@@ -222,9 +221,10 @@ h1 {
 }
 
 .popular {
-    /*display: flex;
-    flex-direction: row;
-    justify-content: space-between;*/
+    height: 322px;
+    width: 1160px;
+    margin: auto;
+    padding-bottom: 100px;
 }
 
 .col-1, .col-3, .col-4, .col-5, .col-6 {
@@ -262,4 +262,141 @@ h1 {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+}
+
+.deli {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1160px;
+}
+
+.ico-1, .ico-2, .ico-3, .ico-4 {
+    padding: 20px;
+    height: 247px;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.ico-1, .ico-2, .ico-3 {
+    padding-right: 20px;
+}
+
+.ico-2, .ico-3, .ico-4 {
+    padding-left: 20px;
+}*/
+
+.del-menu {
+    padding-right: 117px;
+    margin-top: -4px;
+}
+
+.del-rect {
+    width: 7px;
+    height: 319px;
+    background-color: black;
+    margin: -100px 0 0 0;
+
+}
+
+.delivery {
+    height: 288px;
+    background: #e5e5e5;
+}
+
+.rect-2 {
+    width: 160px;
+    height: 8px;
+    background-color: #f0c52e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 53px;
+}
+
+h3 {
+    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-size: 47px;
+    margin: 0;
+}
+
+.del-descr {
+
+    padding: 0 116px 0 116px;
+    margin-top: -32px;
+}
+
+.del-img {
+    margin-top: -15px;
+    padding: 0 66px 0 0;
+}
+
+.del-text {
+    width: 438px;
+    line-height: 30px;
+}
+
+.partners {
+    width: 1200px;
+    margin: auto;
+}
+
+.info {
+    height: 655px;
+    width: 1200px;
+    margin: auto;
+}
+
+.rect-3 {
+    width: 80px;
+    height: 7px;
+    background-color: black;
+    margin-bottom: 51px;
+}
+
+.info-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about {
+    padding: 20px;
+}
+
+.contacts {
+    padding: 20px;
+}
+
+.about-text1 {
+    width: 460px;
+    padding: 60px 0 45px 0;
+    margin: 0;
+    line-height: 30px;
+}
+
+.about-text2 {
+    width: 460px;
+    padding-bottom: 85px;
+    margin: 0;
+    letter-spacing: -0.2px;
+    line-height: 30px;
+}
+
+.about-text3 {
+    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-size: 16px;
+}
+
+.about-text3 ul {
+    list-style-image: url(../img/marker.png); 
+    margin-right: 26px;
+}
+
+.about-text3 li {
+    padding-bottom: 26px;
+    padding-left: 26px;
 }
