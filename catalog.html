@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/catalog.css">
-
+    <script src="../data/js/script.js"></script>
   </head>
   
 <body>
@@ -37,9 +37,9 @@
       </div>
     
       <div class="nav-down">
-        <div class="catalog">
-          <a href="#">Каталог товаров <img src="img/plus.png" alt="" class="plus"></a>
-        </div>
+        <span class="catalogbut" onclick="view('hidden');">
+          Каталог товаров <img src="img/plus.png" alt="" class="plus">
+        </span>
         <div class="menu">
           <div class="container_left">
             <div class="del">
@@ -54,6 +54,20 @@
           </div>
         </div>
       </div>
+      <div id="hidden" class="navhidden">
+        <div class="nav-1">
+        <a>Виртуальная реальность</a>
+        <a>Моноподы для селфи</a>
+        <a>Экшн-камеры</a>
+      </div>
+        <div class="nav-2">
+        <a>Фитнес-браслеты</a>
+        <a>Умные часы</a>
+      </div>
+      <div class="nav-3">
+        <a>Квадрокоптеры</a>
+      </div>
+    </div>
     </div>
   </div>
 </header>
@@ -66,45 +80,65 @@
             <li><a href="#">Каталог товаров</a></li>
             <li class="active">Моноподы для селфи</li>
         </ul>
-
     </div>
-    <div class="back-con">
-        <div class="catalog-cont">
-            <div class="filter">
-                <h2>Фильтр:</h2>
-                <span>Стоимость</span>
-                <span>Цвет</span>
-                <span>Bluetooth</span>
-                <a href="#">
-                    <div class="rect-4">
-                    <div class="button">Показать</div>
-                    </div> 
-                </a>
-            </div>
-            <div class="sort">
-                <div class="sort-menu">
-                    <h2>Сортировка</h2>
-                    <div class="sorting">
-                        <span>По цене</span>
-                        <span>По типу</span>
-                        <span>По популярности</span>
-                    </div>
 
-                    <div class="up-down">
-                        <img src="img/icon-up-dir.png" alt="" class="up">
-                        <img src="img/icon-down-dir.png" alt="" class="down">
+    
+        <div class="catalog-cont">
+            <div class="back-con">
+                <div class="content-menu">
+                    <div class="filter">
+                        <h2>Фильтр:</h2>
+                    </div>  
+                        
+                    <div class="sort-menu">
+                        <div class="sort-filter">
+                            <h2>Сортировка</h2>
+                            <div class="sorting">
+                                <span>По цене</span>
+                                <span>По типу</span>
+                                <span>По популярности</span>
+                            </div>
+                        </div>
+                        <div class="up-down">
+                            <img src="img/icon-up-dir.png" alt="" class="up">
+                            <img src="img/icon-down-dir.png" alt="" class="down">
+                        </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="catalog-items">
+                <div class="filter-menu">
+                    <div class="sub-filter">
+                        <div class="price">
+                            <div class="line"></div>
+                            <span>Стоимость</span>
+                            <div class="price-filter">
+
+                            </div>
+                        </div>
+                        <span>Цвет</span>
+                        <span>Bluetooth</span>
+                        <a href="#">
+                            <div class="rect-4">
+                            <div class="button">Показать</div>
+                            </div> 
+                        </a>
+                    </div>
+                </div>
                 <div class="items">
                     <div class="item-1"><img src="img/item-1.jpg" alt="" class=""></div>
                     <div class="item-2"><img src="img/item-2.jpg" alt="" class=""></div>
                     <div class="item-3"><img src="img/item-3.jpg" alt="" class=""></div>
                     <div class="item-4"><img src="img/item-4.jpg" alt="" class=""></div>
                 </div>
+                <div class="backg">
+
+                </div>
             </div>
+
         </div>
-    </div>
+    
 </section>
 
 

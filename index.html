@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="../data/js/script.js"></script>
   </head>
   
 <body>
@@ -36,9 +36,9 @@
       </div>
     
       <div class="nav-down">
-        <div class="catalog">
-          <a href="../data/catalog.html">Каталог товаров <img src="img/plus.png" alt="" class="plus"></a>
-        </div>
+         <span class="catalogbut" onclick="view('hidden');">
+            Каталог товаров <img src="img/plus.png" alt="" class="plus">
+         </span>
         <div class="menu">
           <div class="container_left">
             <div class="del">
@@ -53,6 +53,20 @@
           </div>
         </div>
       </div>
+      <div id="hidden" class="navhidden">
+        <div class="nav-1">
+        <a>Виртуальная реальность</a>
+        <a>Моноподы для селфи</a>
+        <a>Экшн-камеры</a>
+      </div>
+        <div class="nav-2">
+        <a>Фитнес-браслеты</a>
+        <a>Умные часы</a>
+      </div>
+      <div class="nav-3">
+        <a>Квадрокоптеры</a>
+      </div>
+    </div>
     </div>
 
 
@@ -68,6 +82,7 @@
 
 <section class="slider">
   <div class="container">
+    <div class="mySlides fade">
     <div class="slider1">
       <div class="sli__img">
         <div><img src="img/slider-1.png" alt="" class="slider"></div>
@@ -86,9 +101,9 @@
           
           <div class="pag">
             <ul>
-              <li><a href="#"><img src="img/slider-button.png" alt="" class="slider__but"></a></li>
-              <li><a href="#"><img src="img/slider-button-empty.png" alt="" class="slider__but"></a></li>
-              <li><a href="#"><img src="img/slider-button-empty.png" alt="" class="slider__but"></a></li>
+              <li><span class="dot" onclick="currentSlide(1)"><img src="img/slider-button.png" alt="" class="slider__but"></span></li>
+              <li><span class="dot" onclick="currentSlide(2)"><img src="img/slider-button-empty.png" alt="" class="slider__but"></span></li>
+              <li><span class="dot" onclick="currentSlide(3)"><img src="img/slider-button-empty.png" alt="" class="slider__but"></span></li>
             </ul>
           </div>
         </div>
@@ -111,42 +126,142 @@
             <p class="ch__de">Материал</p>
             </li>
           </ul>
+        </div>   
+
+      </div>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="slider1">
+      <div class="sli__img">
+        <div><img src="img/slider-2.png" alt="" class="slider"></div>
+      </div>
+      <div class="sli__text">
+        <h1>Худеем <br> правильно!</h1>
+        <p class="descr">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+          не пропускать занятия и соблюдать диету.
+        </p>
+        <div class="butt">
+          <a href="#">
+            <div class="rect-1">
+              <div class="button">Подробнее</div>
+            </div>
+          </a>
+          
+          <div class="pag">
+            <ul>
+              <li><span class="dot" onclick="currentSlide(1)"><img src="img/slider-button-empty.png" alt="" class="slider__but"></span></li>
+              <li><span class="dot" onclick="currentSlide(2)"><img src="img/slider-button.png" alt="" class="slider__but"></span></li>
+              <li><span class="dot" onclick="currentSlide(3)"><img src="img/slider-button-empty.png" alt="" class="slider__but"></span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="num-2">02</div>
+
+        <div class="charact">
+          <ul>
+            <li>
+              <p class="ch">48 часов</p>
+              <p class="ch__de">Без подзарядки</p>
+              
+            </li>
+
+          </ul>
         </div>    
       </div>
     </div>
+  </div>
 
+  <div class="mySlides fade">
+    <div class="slider1">
+      <div class="sli-img-3">
+        <div><img src="img/slider-3.png" alt="" class="slider"></div>
+      </div>
+      <div class="sli-text-3">
+        <h1 class="h-pos">Порхает как бабочка,<br> жалит как пчела!</h1>
+        <p class="descr">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+          мощным лазером, замаскированным под стандартную камеру.
+        </p>
+        <div class="butt">
+          <a href="#">
+            <div class="rect-1">
+              <div class="button">Подробнее</div>
+            </div>
+          </a>
+          
+          <div class="pag">
+            <ul>
+              <li><span class="dot" onclick="currentSlide(1)"><img src="img/slider-button-empty.png" alt="" class="slider__but"></span></li>
+              <li><span class="dot" onclick="currentSlide(2)"><img src="img/slider-button-empty.png" alt="" class="slider__but"></span></li>
+              <li><span class="dot" onclick="currentSlide(3)"><img src="img/slider-button.png" alt="" class="slider__but"></span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="num-3">03</div>
+
+        <div class="charact">
+          <ul>
+            <li>
+              <p class="ch">800 м</p>
+              <p class="ch__de">Дальность полета</p>
+              
+            </li>
+            <li>
+              <p class="ch">50 м</p>
+              <p class="ch__de">Радиус поражения</p>
+            </li>
+          </ul>
+        </div>    
+      </div>
+    </div>
+  </div>
+  </div>
+  
 </section>
 
 <section class="popular">
-    <div class="">
+    <div class="pop-block">
       <div class="icon">
-      <div class="col-1">
-        <img src="img/popular-1.png" alt="">
+      
+      <div class="pop-1">
+        <div class="col-1">
+        <img src="img/popular-1.png" alt=""></div>
+        <div class="col-text-1">Виртуальная реальность</div>
       </div>
-      <div class="col-2">
-        <img src="img/popular-2.png" alt="">
-        </div>
-      <div class="col-3">
-        <img src="img/popular-3.png" alt="">
-        </div>
-      <div class="col-4">
-        <img src="img/popular-4.png" alt="">
-        </div>
-      <div class="col-5">
-        <img src="img/popular-5.png" alt="">
-        </div>
-      <div class="col-6">
-        <img src="img/poppular-6.png" alt="">
-        </div>
+
+      <div class="pop-2">
+        <div class="col-2">
+        <img src="img/popular-2.png" alt=""></div>
+        <div class="col-text-2">Моноподы для селфи</div>
       </div>
-      <div class="col-tex">
-        <div class="col-text">Виртуальная реальность</div>
-        <div class="col-text">Моноподы для селфи</div>
-        <div class="col-text">Экшн-камеры</div>
-        <div class="col-text">Фитнес-браслеты</div>
-        <div class="col-text">Умные часы</div>
-        <div class="col-text">Квадрокоптеры</div>
+      
+      <div class="pop-3">
+        <div class="col-3">
+        <img src="img/popular-3.png" alt=""></div>
+        <div class="col-text-3">Экшн-камеры</div>
       </div>
+
+      <div class="pop-4">
+        <div class="col-4">
+        <img src="img/popular-4.png" alt=""></div>
+        <div class="col-text-4">Фитнес-браслеты</div>
+      </div>
+
+      <div class="pop-5">
+        <div class="col-5">
+        <img src="img/popular-5.png" alt=""></div>
+        <div class="col-text-5">Умные часы</div>
+      </div>
+
+      <div class="pop-6">
+        <div class="col-6">
+        <img src="img/popular-6.png" alt=""></div>
+        <div class="col-text-6">Квадрокоптеры</div>
+      </div>
+
     </div>
 </section>
 
@@ -227,11 +342,38 @@
       <h3>Контакты</h3>
       <p class="map-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
       <img src="img/map.jpg" alt="" class="map">
-      <a href="#">
-        <div class="rect-4">
+      <div id="write-but" class="btn">
+        <div class="rect-4" >
         <div class="button">Напишите нам</div>
         </div> 
-      </a>
+      </div>
+      <div id="write-us" class="modal">
+        <div class="text">
+          <div class="form-back">
+            <span  class="close">
+              <img src="img/modal-close-2.png" alt="" class="imgclose">
+            </span>
+            <div class="title">
+              <div class="form-text">Ваше имя:
+                <input class="name" type="text" placeholder="Имя Фамилия">
+              </div>
+              <div class="form-text">Ваш e-mail:
+                <input class="name" type="email" placeholder="email@example.com">
+              </div>
+            </div>
+            <div class="form-mess">Текст письма:
+              <textarea class="mess" type="text" placeholder="В свободной форме"></textarea>
+            </div>
+            <div class="form-button">
+              <a href="#">
+                <div class="rect-6">
+                <div class="button">Отправить</div>
+                </div> 
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>        
 
     </div>
   </div>
@@ -285,6 +427,8 @@
     </div>
 
 </footer>
+
+<script src="../data/js/script.js"></script>
 
 </body>
 

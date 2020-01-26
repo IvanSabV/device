@@ -8,7 +8,7 @@ body {
 
 
 header {
-    background: #f0c52e80;
+    background: #f7e296;
     height: 186px;
     width: 1160px;
     margin: 31px auto auto auto;
@@ -228,11 +228,11 @@ footer {
 }
 
 .filter {
-    height: 1287px;
+
     width: 270px;
-    background-color: #efefef;
+
     display: flex;
-    flex-direction: column;
+
 }
 
 h2 {
@@ -245,6 +245,15 @@ h2 {
 .sort {
 
     display: flex;
+}
+
+.sorting {
+    padding-left: 55px;
+    display: flex;
+}
+
+.sorting span {
+    padding: 0 15px;
 }
 
 .rect-4 {
@@ -266,31 +275,40 @@ h2 {
 }
 
 .catalog-cont {
-    display: flex;
-    /*flex-direction: row;
-    justify-content: space-between;*/
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: flex-start;
     height: 1287px;
-    /*width: 90%;*/
+    width: 90%;
     max-width: 1040px;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: hidden;*/
+    padding: 1px;
 }
 
 .catalog-cont>*:first-child {
     align-items: stretch;
 }
 
+.content-menu {
+    max-width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
 .back-con {
     background-color: #00000014;
     height: 70px;
-    
+    display: flex;
 }
 
 .items {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    width: 830px;
 }
 
 .items div {
@@ -301,4 +319,89 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 830px;
+    margin-left: 70px;
+}
+
+.sort-filter {
+    display: flex;
+    align-items: center;
+}
+
+.up-down {
+    width: 260px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -60px;
+}
+
+.filter-menu {
+     display: flex;
+    flex-direction: column;
+}
+
+.catalog-items {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.sub-filter {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.backg {
+    background-color: darkgray;
+}
+
+.sub-filter span {
+    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-size: 18px;
+}
+
+.line {
+    background-color: black;
+    height: 2px;
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.navhidden {
+    height: 130px;
+    padding-top: 40px;
+    background-color: #f7e296;
+    margin: 0 -60px;
+    overflow: hidden;
+    display: none;
+    z-index: 1;
+}
+
+.navhidden a {
+    font-family: 'Open Sans Light', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    text-transform: none;
+    letter-spacing: 0;
+    padding-bottom: 20px;
+}
+
+.nav-1 {
+    margin-left: 60px;
+}
+
+.nav-1, .nav-2, .nav-3 {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+
+}
+
+.catalogbut {
+    cursor: pointer;
+    
+}
+
+.navhidden.open {
+    display: flex;
 }
