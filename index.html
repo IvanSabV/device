@@ -16,29 +16,30 @@
     </div>
     <div class="navigation">
       <div class="nav-up">
-        <div class="search">
-          <img src="img/search_.png" alt="" class="search">
-          Поиск по сайту
+        <div class="search" onclick="search('btn-hidden');">
+
+          <input class="text-search" placeholder="Поиск по сайту"></input>
+          <button type="submit" id="btn-hidden" class="btn-search">Найти</button>
         </div>
         <div class="menu_up">
           <div class="container_left">
-            <a href="#"><img src="img/user_.png" alt="" class="user">Войти</a>
+            <a href="#" class="user"><img src="img/user_.png" alt="" class="user">Войти</a>
           </div>
           <div class="container_cart">
             <div class="compare">
-              <a href="#"><img src="img/compare_.png" alt="" class="imgcompare">Сравнить</a>
+              <a href="#" class="compare"><img src="img/compare_.png" alt="" class="imgcompare">Сравнить</a>
             </div>
             <div class="cart">
-              <a href="#"><img src="img/cart_.png" alt="" class="cart">Корзина</a>
+              <a href="#" class="cart"><img src="img/cart_.png" alt="" class="cart">Корзина</a>
             </div>
           </div>
         </div>
       </div>
     
       <div class="nav-down">
-         <span class="catalogbut" onclick="view('hidden');">
-            Каталог товаров <img src="img/plus.png" alt="" class="plus">
-         </span>
+         <a href="../data/catalog.html" class="catalogbut" onmouseover="view('hidden');">          
+            <span class="cat"> Каталог товаров </span><img src="img/plus.png" alt="" class="plus">
+         </a>
         <div class="menu">
           <div class="container_left">
             <div class="del">
@@ -49,22 +50,22 @@
             </div>
           </div>
           <div class="container_right">
-            <a href="#">Контакты</a>
+            <a href="#" class="conts">Контакты</a>
           </div>
         </div>
       </div>
       <div id="hidden" class="navhidden">
         <div class="nav-1">
-        <a>Виртуальная реальность</a>
-        <a>Моноподы для селфи</a>
-        <a>Экшн-камеры</a>
+        <a href="#" class="m-1">Виртуальная реальность</a>
+        <a href="#" class="m-2">Моноподы для селфи</a class="m-1">
+        <a href="#" class="m-3">Экшн-камеры</a class="m-1">
       </div>
         <div class="nav-2">
-        <a>Фитнес-браслеты</a>
-        <a>Умные часы</a>
+        <a href="#" class="m-4">Фитнес-браслеты</a class="m-1">
+        <a href="#" class="m-5">Умные часы</a class="m-1">
       </div>
       <div class="nav-3">
-        <a>Квадрокоптеры</a>
+        <a href="#" class="m-6">Квадрокоптеры</a class="m-1">
       </div>
     </div>
     </div>
@@ -268,30 +269,91 @@
 <section class="delivery">
   <div class="deli">
     <div class="del-menu">
-      <a href="#">
+      <div>
+      <span class="back-delivery">
         <div class="rect-2">
-          <div class="button">Доставка</div>
+          <div class="button-d" onclick="currentDeli(1)"><div class="current">Доставка</div></div>
         </div>
-      </a>
-      <a href="#">
+      </span>
+      <span>
         <div class="rect-2">
-          <div class="button">Гарантия</div>
+          <div class="button-d" onclick="currentDeli(2)">Гарантия</div>
         </div>
-      </a>
-      <a href="#">
+      </span>
+      <span>
         <div class="rect-2">
-          <div class="button">Кредит</div>
+          <div class="button-d" onclick="currentDeli(3)">Кредит</div>
         </div>
-      </a>
-        
-     
+      </span>
     </div>
-    <div class="del-rect"></div>
+      <div class="del-rect"></div>
+    </div>
+    
     <div class="del-descr"><h3>Доставка</h3>
       <p class="del-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
     </div>
     <div class="del-img"><img src="img/delivery.png" alt="" class=""></div>
   </div>
+
+  <div class="deli">
+    <div class="del-menu">
+      <div>
+      <span class="back-delivery">
+        <div class="rect-2">
+          <div class="button-d" onclick="currentDeli(1)">Доставка</div>
+        </div>
+      </span>
+      <span>
+        <div class="rect-2">
+          <div class="button-d" onclick="currentDeli(2)"><div class="current">Гарантия</div></div>
+        </div>
+      </span>
+      <span>
+        <div class="rect-2">
+          <div class="button-d" onclick="currentDeli(3)">Кредит</div>
+        </div>
+      </span>
+    </div>
+    <div class="del-rect"></div>
+    </div>
+    
+    <div class="del-descr"><h3>Гарантия</h3>
+      <p class="del-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+        Товар, не дом, конечно же.</p>
+    </div>
+    <div class="del-img-2"><img src="img/warranty.png" alt="" class=""></div>
+  </div>
+  
+
+  <div class="deli">
+    <div class="del-menu">
+      <div>
+      <span class="back-delivery">
+        <div class="rect-2">
+          <div class="button-d" onclick="currentDeli(1)">Доставка</div>
+        </div>
+      </span>
+      <span>
+        <div class="rect-2">
+          <div class="button-d" onclick="currentDeli(2)">Гарантия</div>
+        </div>
+      </span>
+      <span>
+        <div class="rect-2">
+          <div class="button-d" onclick="currentDeli(3)"><div class="current">Кредит</div></div>
+        </div>
+      </span>
+    </div>
+    <div class="del-rect"></div>
+    </div>
+    
+    <div class="del-descr"><h3>Кредит</h3>
+      <p class="del-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
+        условия кредита. Выгодные для нашего банка, разумеется.</p>
+    </div>
+    <div class="del-img-3"><img src="img/credit.png" alt="" class=""></div>
+  </div>
+  
 
 </section>
 
@@ -341,7 +403,18 @@
       <div class="rect-3"></div>
       <h3>Контакты</h3>
       <p class="map-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-      <img src="img/map.jpg" alt="" class="map">
+      
+      <div id="map-btn" class="map-btn">
+        <img src="img/map.jpg" alt="" class="map">
+      </div>
+      <div id="map-modal" class="map-modal">
+        <div class="map-cnt">
+          <img src="img/map-big.jpg" alt="" class="map-big">
+          <span  class="closes">
+            <img src="img/modal-close-2.png" alt="" class="imgclose">
+          </span>  
+        </div>
+      </div>
       <div id="write-but" class="btn">
         <div class="rect-4" >
         <div class="button">Напишите нам</div>
@@ -389,13 +462,13 @@
       </div>
       <div class="menu-item">
         <div class="user-f">
-          <a href="#"><img src="img/user.png" alt="" class="">Войти</a>
+          <a href="#"><img src="img/user.png" alt="" class="user-i">Войти</a>
         </div>
         <div class="compare-f">
-            <a href="#"><img src="img/compare.png" alt="" class="">Сравнить<a>
+            <a href="#"><img src="img/compare.png" alt="" class="compare-i">Сравнить<a>
         </div>
         <div class="cart-f">
-          <a href="#"><img src="img/cart.png" alt="" class="">Корзина</a>
+          <a href="#"><img src="img/cart.png" alt="" class="cart-i">Корзина</a>
         </div>
       </div>
     </div>

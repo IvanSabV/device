@@ -26,10 +26,69 @@ header {
     margin-top: -17px;
 }
 
+.logo:hover, .cat:hover, .user:hover, .compare:hover, .cart:hover, .del:hover, .garant:hover, .conts:hover, .m-1:hover, .m-2:hover, .m-3:hover, .m-4:hover, .m-5:hover, .m-6:hover, .logo-footer:hover, .del-2:hover, .garant-2:hover, .contacts-2:hover, .logo-html:hover {
+    opacity: 60%;
+}
+
+.logo:active, .cat:active, .user:active, .compare:active, .cart:active, .del:active, .garant:active, .conts:active, .m-1:active, .m-2:active, .m-3:active, .m-4:active, .m-5:active, .m-6:active, .logo-footer:active, .del-2:active, .garant-2:active, .contacts-2:active, .logo-html:hover {
+    opacity: 30%;
+}
+
+
+
 .search {
     padding: 0 14px 0 0;
-    color: #0000004d;
 
+}
+
+.text-search {
+    background: none;
+    border: none;
+    background-image: url(../img/search_.png);
+    background-repeat: no-repeat; 
+    background-position: 4px;
+    outline: none;  
+    padding-left: 40px;  
+    height: 46px;  
+    font-family: 'Open Sans Light', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+
+.btn-search {
+    background: none;
+    outline: none;
+    border: black solid 2px;
+    height: 49px;
+    width: 85px;
+    margin-left: -5px;
+    display: none;
+}
+
+.btn-search:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.btn-search:focus {
+    background-color: black;
+    color: #ffffff4d;
+}
+
+.text-search::placeholder {
+    opacity: 30%;
+}
+
+
+.text-search:hover::placeholder {
+    opacity: 60%;
+}
+
+.text-search:focus::placeholder {
+    opacity: 100%;
+}
+
+.text-search:focus {
+    border-bottom: black solid 2px;
 }
 
 .navigation {
@@ -60,7 +119,7 @@ header {
     font-family: 'Gilroy ExtraBold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    padding-top: 51px;
+    padding-top: 30px;
     font-size: 18px;
     display: flex;
     justify-content: space-between;
@@ -204,11 +263,12 @@ h1 {
     
 }
 
-.button {
+.button, .button-d {
     font-family: 'Gilroy ExtraBold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .rect-1 {
@@ -245,10 +305,28 @@ h1 {
     cursor: pointer;
 }
 
+.current {
+    background-color: black;
+    width: 260px;
+    height: 40px;
+    color: #f7e184;
+    display: flex;
+    align-items: center;
+    padding-left: 17px;
+    margin-left: 120px;
+    cursor: pointer;
+}
 
 .hover, .dot:active {
     cursor: pointer;
     background: url(../img/slider-button.png) no-repeat center;
+}
+
+
+
+.back-delivery {
+    width: 277px;
+    height: 40px;
 }
 
 .num {
@@ -406,7 +484,7 @@ h1 {
 .deli {
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: start;
     margin: 0 auto;
     width: 90%;
     max-width: 1160px;
@@ -457,13 +535,14 @@ h1 {
 .del-menu {
     padding-right: 117px;
     margin-top: -4px;
+    display: flex;
 }
 
 .del-rect {
     width: 7px;
     height: 319px;
     background-color: black;
-    margin: -100px 0 0 0;
+    margin: -100px 0 0 118px;
 
 }
 
@@ -480,7 +559,9 @@ h1 {
     justify-content: center;
     align-items: center;
     margin-bottom: 53px;
+    cursor: pointer;
 }
+
 
 h3 {
     font-family: 'Gilroy ExtraBold', sans-serif;
@@ -490,13 +571,22 @@ h3 {
 
 .del-descr {
 
-    padding: 0 116px 0 116px;
     margin-top: -32px;
 }
 
 .del-img {
     margin-top: -15px;
-    padding: 0 66px 0 0;
+    padding-left: 80px;
+}
+
+.del-img-2 {
+    margin-top: -38px;
+    padding-left: 80px;
+}
+
+.del-img-3 {
+    margin-top: -38px;
+    padding-left: 80px;
 }
 
 .del-text {
@@ -554,6 +644,33 @@ h3 {
     z-index: 2; 
 }
 
+#map-modal {
+    position: fixed; 
+    display: none; 
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2; 
+    align-items: center;
+    justify-content: center;
+}
+
+.map-cnt {
+    position: relative;
+}
+
+.closes {
+    position: absolute;
+    padding: 22px;
+    display: flex;
+    justify-content: flex-end;
+    top: 2%;
+    right: 2%;
+}
+
 .text{
     position: absolute;
     top: 50%;
@@ -600,7 +717,7 @@ h3 {
     flex-direction: column;
 }
 
-input:hover {
+input.name:hover {
     background-color: #eaeaea;
 }
 
@@ -848,4 +965,13 @@ footer {
 
 .social img {
     padding: 0 8px;
+    opacity: 30%;
+}
+
+.social img:hover {
+    opacity: 60%;
+}
+
+.social img:active {
+    opacity: 10%;
 }
