@@ -4,6 +4,8 @@ function view(n) {
 }
 
 
+
+
 var modal = document.getElementById('write-us');
 
 var btn = document.getElementById("write-but");
@@ -28,7 +30,6 @@ window.onclick = function(event) {
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -49,10 +50,10 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-var slideIndex = 1;
-showDeli(slideIndex);
 
-// Thumbnail image controls
+var slideIndex = 1;
+	showDeli(slideIndex);
+
 function currentDeli(n) {
   showDeli(slideIndex = n);
 }
@@ -78,22 +79,51 @@ function showDeli(n) {
     style.display = (style.display == 'initial') ? 'none' : 'initial';
 }
 
-var modal = document.getElementById('map-modal');
 
-var btn = document.getElementById("map-btn");
+var mapmodal = document.getElementById('map-modal');
 
-var span = document.getElementsByClassName("imgclose")[0];
+var mapbtn = document.getElementById("map-btn");
 
-btn.onclick = function() {
-    modal.style.display = "flex";
+var span = document.getElementsByClassName("imgcloses")[0];
+
+mapbtn.onclick = function() {
+    mapmodal.style.display = "flex";
 }
 
 span.onclick = function() {
-    modal.style.display = "none";
+    mapmodal.style.display = "none";
 }
 
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == mapmodal) {
+        mapmodal.style.display = "none";
     }
 }
+
+
+var header = document.getElementById("sortin");
+
+var btns = header.getElementsByClassName("sor");
+
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("activ");
+    current[0].className = current[0].className.replace(" activ", "");
+    this.className += " activ";
+  });
+}
+
+
+$( function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+  } );

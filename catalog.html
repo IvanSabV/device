@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="../data/css/jquery-ui.css">
     <link rel="stylesheet" href="css/catalog.css">
-    <script src="../data/js/script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="../data/js/jquery-3.4.1.min.js"></script>
+    <script src="../data/js/jquery-ui.js"></script>
   </head>
   
 <body>
@@ -12,17 +15,18 @@
 <header>
   <div class="container">
     <div>
-        <a href="../data/index.html"><img src="img/logo.png" alt="" class="logo"></a>
+        <a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
     </div>
     <div class="navigation">
       <div class="nav-up">
-        <div class="search">
-          <img src="img/search_.png" alt="" class="search">
-          Поиск по сайту
+        <div class="search" onclick="search('btn-hidden');">
+
+          <input class="text-search" placeholder="Поиск по сайту"></input>
+          <button type="submit" id="btn-hidden" class="btn-search">Найти</button>
         </div>
         <div class="menu_up">
           <div class="container_left">
-            <a href="#"><img src="img/user_.png" alt="" class="user">Валентин Петухов</a>
+            <a href="#" class="user"><img src="img/user_.png" alt="" class="user">Валентин Петухов</a>
             <a href="#" class="out">Выйти</a>
           </div>
           <div class="container_cart">
@@ -37,9 +41,9 @@
       </div>
     
       <div class="nav-down">
-        <span class="catalogbut" onmouseover="view('hidden');">
-          Каталог товаров <img src="img/plus.png" alt="" class="plus">
-        </span>
+         <a href="catalog.html" class="catalogbut" onmouseover="view('hidden');">          
+            <span class="cat"> Каталог товаров </span><img src="img/plus.png" alt="" class="plus">
+         </a>
         <div class="menu">
           <div class="container_left">
             <div class="del">
@@ -50,22 +54,22 @@
             </div>
           </div>
           <div class="container_right">
-            <a href="#">Контакты</a>
+            <a href="#" class="conts">Контакты</a>
           </div>
         </div>
       </div>
       <div id="hidden" class="navhidden">
         <div class="nav-1">
-        <a>Виртуальная реальность</a>
-        <a>Моноподы для селфи</a>
-        <a>Экшн-камеры</a>
+        <a href="#" class="m-1">Виртуальная реальность</a>
+        <a href="#" class="m-2">Моноподы для селфи</a class="m-1">
+        <a href="#" class="m-3">Экшн-камеры</a class="m-1">
       </div>
         <div class="nav-2">
-        <a>Фитнес-браслеты</a>
-        <a>Умные часы</a>
+        <a href="#" class="m-4">Фитнес-браслеты</a class="m-1">
+        <a href="#" class="m-5">Умные часы</a class="m-1">
       </div>
       <div class="nav-3">
-        <a>Квадрокоптеры</a>
+        <a href="#" class="m-6">Квадрокоптеры</a class="m-1">
       </div>
     </div>
     </div>
@@ -92,11 +96,11 @@
                         
                     <div class="sort-menu">
                         <div class="sort-filter">
-                            <h2>Сортировка</h2>
-                            <div class="sorting">
-                                <span>По цене</span>
-                                <span>По типу</span>
-                                <span>По популярности</span>
+                            <h2>Сортировка:</h2>
+                            <div id="sortin" class="sorting">
+                                <span class="sor active">По цене</span>
+                                <span class="sor">По типу</span>
+                                <span class="sor">По популярности</span>
                             </div>
                         </div>
                         <div class="up-down">
@@ -114,27 +118,167 @@
                             <div class="line"></div>
                             <span>Стоимость</span>
                             <div class="price-filter">
-
+                              <p>
+                                <label for="amount">Price range:</label>
+                                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                              </p>
+                               
+                              <div id="slider-range"></div>
+                               
+                               
                             </div>
                         </div>
-                        <span>Цвет</span>
-                        <span>Bluetooth</span>
+                        <div class="color-f">
+                          <div class="line"></div>
+                          <span>Цвет</span>
+                          <div class="box">
+                          <label class="contain">Черный
+                            <input type="checkbox" checked hidden>
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="contain">Белый
+                            <input type="checkbox" hidden>
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="contain">Синий
+                            <input type="checkbox" hidden>
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="contain">Красный
+                            <input type="checkbox" hidden>
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="contain">Розовый
+                            <input type="checkbox" hidden disabled>
+                            <span class="checkmark"></span>
+                          </label>
+                          </div>
+                        </div>
+                        <div class="bluetooth">
+                          <div class="line"></div>
+                          <span>Bluetooth</span>
+                          <div class="blue">
+                            <label class="contain">
+                              <input name="radio-btn" type="radio" value="yes" checked hidden> Есть
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="contain">
+                              <input name="radio-btn" type="radio" value="no" hidden> Нет
+                              <span class="checkmark"></span>
+                            </label>
+                   
+                            </div>
+                        </div>
+                        <div class="btn">
                         <a href="#">
                             <div class="rect-4">
                             <div class="button">Показать</div>
                             </div> 
                         </a>
+                      </div>
+						
+						
+						
                     </div>
                 </div>
                 <div class="items">
-                    <div class="item-1"><img src="img/item-1.jpg" alt="" class=""></div>
-                    <div class="item-2"><img src="img/item-2.jpg" alt="" class=""></div>
-                    <div class="item-3"><img src="img/item-3.jpg" alt="" class=""></div>
-                    <div class="item-4"><img src="img/item-4.jpg" alt="" class=""></div>
+                    <div class="item-1" >
+                      <div class="itemttl">
+                        <img src="img/item-1.jpg" alt="" class="">
+                        <div class="hidcart">
+                          <div class="btncart">
+                            <a href="#">
+                              <div class="rect">
+                              <div class="button">В корзину</div>
+                              </div> 
+                            </a>
+                          
+                        </div>
+                        <a href="#" class="add-compare">Добавить к сравнению</a>
+                        <div class="rect-over"></div>
+                      </div>
+                    </div>
+                      <span class="item-title-price">
+                        
+                        <span class="item-title-1">Любительская селфи-палка</span>
+                        <p>500 руб.</p>
+                      </span>	
+                      
+                    </div>
+                    <div class="item-2">
+                      <div class="itemttl">
+                        <img src="img/item-2.jpg" alt="" class="">
+                        <div class="hidcart">
+                          <div class="btncart">
+                            <a href="#">
+                              <div class="rect">
+                              <div class="button">В корзину</div>
+                              </div> 
+                            </a>
+                          
+                        </div>
+                        <a href="#" class="add-compare">Добавить к сравнению</a>
+                        <div class="rect-over"></div>
+                      </div>
+                      </div>
+						<span class="item-title-price">
+							<span class="item-title">Профессиональная селфи-палка</span>
+							<p>1 500 руб.</p>
+						</span>	
+					</div>
+                    <div class="item-3">
+                      <div class="itemttl">
+                        <img src="img/item-3.jpg" alt="" class="">
+                        <div class="hidcart">
+                          <div class="btncart">
+                            <a href="#">
+                              <div class="rect">
+                              <div class="button">В корзину</div>
+                              </div> 
+                            </a>
+                          
+                        </div>
+                        <a href="#" class="add-compare">Добавить к сравнению</a>
+                        <div class="rect-over"></div>
+                      </div>
+                      </div>
+						<span class="item-title-price">
+							<span class="item-title">Непотопляемая селфи-палка</span>
+							<p>2 500 руб.</p>
+						</span>
+					</div>
+                    <div class="item-4">
+                      <div class="itemttl">
+            <img src="img/item-4.jpg" alt="" class="">
+            <div class="hidcart">
+              <div class="btncart">
+                <a href="#">
+                  <div class="rect">
+                  <div class="button">В корзину</div>
+                  </div> 
+                </a>
+              
+            </div>
+            <a href="#" class="add-compare">Добавить к сравнению</a>
+            <div class="rect-over"></div>
+          </div>
+          </div>
+						<span class="item-title-price">
+							<span class="item-title">Селфи-палка «Следуй за мной»</span>
+							<p>4 900 руб.</p>
+						</span>
+					</div>
+					<div class="backg">
+						<span class="btn-back">назад</span>
+						<ul class="pag">
+							<li class="page-num active">1</li>
+							<li class="page-num">2</li>
+							<li class="page-num">3</li>
+						</ul>
+						<span class="btn-go">вперед</span>
+					</div>
                 </div>
-                <div class="backg">
-
-                </div>
+                
             </div>
 
         </div>
@@ -153,13 +297,13 @@
       </div>
       <div class="menu-item">
         <div class="user-f">
-          <a href="#"><img src="img/user.png" alt="" class="">Войти</a>
+          <a href="#"><img src="img/user.png" alt="" class="user-i">Войти</a>
         </div>
         <div class="compare-f">
-            <a href="#"><img src="img/compare.png" alt="" class="">Сравнить<a>
+            <a href="#"><img src="img/compare.png" alt="" class="compare-i">Сравнить</a>
         </div>
         <div class="cart-f">
-          <a href="#"><img src="img/cart.png" alt="" class="">Корзина</a>
+          <a href="#"><img src="img/cart.png" alt="" class="cart-i">Корзина</a>
         </div>
       </div>
     </div>
@@ -191,6 +335,8 @@
     </div>
 
 </footer>
+
+<script src="js/script.js"></script>
 
 </body>
 

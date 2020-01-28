@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="../data/js/script.js"></script>
+    <script src="js/script.js"></script>
   </head>
   
 <body>
@@ -12,7 +12,7 @@
 <header>
   <div class="container">
     <div>
-      <a href="../data/index.html"><img src="img/logo.png" alt="" class="logo"></a>
+      <a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
     </div>
     <div class="navigation">
       <div class="nav-up">
@@ -37,7 +37,7 @@
       </div>
     
       <div class="nav-down">
-         <a href="../data/catalog.html" class="catalogbut" onmouseover="view('hidden');">          
+         <a href="catalog.html" class="catalogbut" onmouseover="view('hidden');">          
             <span class="cat"> Каталог товаров </span><img src="img/plus.png" alt="" class="plus">
          </a>
         <div class="menu">
@@ -275,12 +275,12 @@
           <div class="button-d" onclick="currentDeli(1)"><div class="current">Доставка</div></div>
         </div>
       </span>
-      <span>
+      <span class="back-delivery">
         <div class="rect-2">
           <div class="button-d" onclick="currentDeli(2)">Гарантия</div>
         </div>
       </span>
-      <span>
+      <span class="back-delivery">
         <div class="rect-2">
           <div class="button-d" onclick="currentDeli(3)">Кредит</div>
         </div>
@@ -303,12 +303,12 @@
           <div class="button-d" onclick="currentDeli(1)">Доставка</div>
         </div>
       </span>
-      <span>
+      <span class="back-delivery">
         <div class="rect-2">
           <div class="button-d" onclick="currentDeli(2)"><div class="current">Гарантия</div></div>
         </div>
       </span>
-      <span>
+      <span  class="back-delivery">
         <div class="rect-2">
           <div class="button-d" onclick="currentDeli(3)">Кредит</div>
         </div>
@@ -333,12 +333,12 @@
           <div class="button-d" onclick="currentDeli(1)">Доставка</div>
         </div>
       </span>
-      <span>
+      <span class="back-delivery">
         <div class="rect-2">
           <div class="button-d" onclick="currentDeli(2)">Гарантия</div>
         </div>
       </span>
-      <span>
+      <span class="back-delivery">
         <div class="rect-2">
           <div class="button-d" onclick="currentDeli(3)"><div class="current">Кредит</div></div>
         </div>
@@ -391,11 +391,11 @@
         </ul>
       </div>
 
-      <a href="#">
+      <div class="btn">
         <div class="rect-4">
         <div class="button">Подробнее о нас</div>
         </div> 
-      </a>
+      </div>
         
     </div>
 
@@ -404,14 +404,14 @@
       <h3>Контакты</h3>
       <p class="map-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
       
-      <div id="map-btn" class="map-btn">
+      <div id="map-btn" class="mapbtn">
         <img src="img/map.jpg" alt="" class="map">
       </div>
-      <div id="map-modal" class="map-modal">
+      <div id="map-modal" class="mapmodal">
         <div class="map-cnt">
           <img src="img/map-big.jpg" alt="" class="map-big">
           <span  class="closes">
-            <img src="img/modal-close-2.png" alt="" class="imgclose">
+            <img src="img/modal-close-2.png" alt="" class="imgcloses">
           </span>  
         </div>
       </div>
@@ -465,7 +465,7 @@
           <a href="#"><img src="img/user.png" alt="" class="user-i">Войти</a>
         </div>
         <div class="compare-f">
-            <a href="#"><img src="img/compare.png" alt="" class="compare-i">Сравнить<a>
+            <a href="#"><img src="img/compare.png" alt="" class="compare-i">Сравнить</a>
         </div>
         <div class="cart-f">
           <a href="#"><img src="img/cart.png" alt="" class="cart-i">Корзина</a>
@@ -501,7 +501,7 @@
 
 </footer>
 
-<script src="../data/js/script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 
