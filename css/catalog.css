@@ -43,9 +43,6 @@ header {
 	opacity: 30%;
 }
 
-
-
-
 .search {
     padding: 0 14px 0 0;
 
@@ -134,6 +131,7 @@ header {
     font-size: 18px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 a {
@@ -199,7 +197,11 @@ footer {
 
 .user-f a {
     color: #fff;
-    opacity: 70%;
+    
+}
+
+.user {
+    opacity: 100%;
 }
 
 .user-f a:hover, .compare-f a:hover, .cart-f a:hover {
@@ -219,7 +221,7 @@ footer {
 
 .menu-item {
     display: flex;
-    width: 325px;
+    width: 480px;
     justify-content: space-between;
 }
 
@@ -292,7 +294,7 @@ footer {
 }
 
 .mono {
-    padding: 44px 0 39px 0;
+    padding: 44px 0 29px 0;
 }
 
 .breadcrumbs {
@@ -319,7 +321,7 @@ footer {
 }
 
 .breadcrumbs li {
-    padding-bottom: 26px;
+    padding-bottom: 50px;
     list-style: none;
 }
 
@@ -356,7 +358,7 @@ h2 {
     font-size: 14px;
 }
 
-.activ, .sor:active {
+.active, .sor:active {
 	opacity: 100%;
 }
 
@@ -457,7 +459,7 @@ h2 {
     width: 230px;
     display: flex;
     justify-content: flex-end;
-
+    align-items: center;
 }
 
 .up-down img {
@@ -491,7 +493,11 @@ h2 {
     padding: 60px;
 }
 
-.color-f, .bluetooth {
+.blue {
+	padding-top: 30px;
+}
+
+.bluetooth {
     padding-top: 40px;
 }
 
@@ -509,7 +515,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .items span {
@@ -569,8 +575,16 @@ h2 {
 	margin: auto 15px;
 }
 
-.page-num, .active {
+.pag .active {
 	opacity: 100%;
+}
+
+.page-num:active {
+    opacity: 100%;
+}
+
+.pag {
+    cursor: pointer;
 }
 
 .page-num {
@@ -640,7 +654,7 @@ h2 {
 
 
 
-.sub-filter span {
+.titles {
     font-family: 'Gilroy ExtraBold', sans-serif;
     font-size: 18px;
 }
@@ -670,6 +684,8 @@ h2 {
     padding-bottom: 20px;
 }
 
+
+
 .nav-1 {
     margin-left: 60px;
 }
@@ -693,111 +709,164 @@ h2 {
 .box {
     display: flex;
     flex-direction: column;
+	padding-top: 30px;
 }
 
 .contain {
-    display: block;
+    display: flex;
     position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.box label {
-    width: 27px;
-    height: 23px;
-    display: block;
-    position: relative;
     font-family: 'Open Sans Light', 'Helvetica Neue', sans-serif;
     font-size: 14px;
-}
-
-input[type="checkbox"] + span {
-    position: absolute; 
-    left: 0; 
-    top: 0;
-    width: 100%; 
-    height: 100%;
-    background: url(../img/checkbox-off.png) no-repeat; 
-    cursor: pointer; 
-   }
-
-   input[type="checkbox"]:checked + span  	{
-    background: url(../img/checkbox-on.png) no-repeat; 
-   }
-
-.blue label {
-    width: 25px;
+    align-items: center;
     height: 25px;
-    display: block;
-    position: relative;
-    font-family: 'Open Sans Light', 'Helvetica Neue', sans-serif;
-    font-size: 14px;
 }
 
-input[type="radio"] + span {
-    position: absolute; 
-    left: 0; 
+.contain-up {
+    display: flex;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    margin-top: -8px;
+}
+
+.contain input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.contain-up input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
     top: 0;
-    width: 100%; 
-    height: 100%;
-    background: url(../img/radio-off.png) no-repeat; 
-    cursor: pointer; 
-   }
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background: url(../img/checkbox-off.png) no-repeat;
+}
 
-   input[type="radio"]:checked + span  	{
-    background: url(../img/radio-on.png) no-repeat; 
-   }
+.checkmark-r {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background: url(../img/radio-off.png) no-repeat;
+
+}
+
+.checkmark-up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background: url(../img/icon-down-dir.png) no-repeat;
+    opacity: 20%;
+}
+
+.contain:hover input ~ .checkmark {
+    opacity: 60%;
+}
+
+.contain:hover input ~ .checkmark-r {
+    opacity: 60%;
+}
+
+.contain-up:hover input ~ .checkmark-up {
+    opacity: 60%;
+}
+
+.contain input:checked ~ .checkmark-r {
+    background: url(../img/radio-on.png) no-repeat;
+}
+
+.contain input:checked ~ .checkmark {
+    background: url(../img/checkbox-on.png) no-repeat;
+}
+
+.contain-up input:checked ~ .checkmark-up {
+    background: url(../img/icon-up-dir.png) no-repeat;
+    opacity: 100%;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkmark-up:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.contain input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.contain-up input:checked ~ .checkmark-up:after {
+    display: block;
+}
+
+.contain input:disabled ~ .checkmark {
+    opacity: 25%;;
+}
+
+input:disabled {
+    opacity: 25%;;
+
+}
+
+.min-max {
+    display: flex;
+}
+
+#slider-range span {
+	font-family: 'Gilroy Light', sans-serif;
+    font-size: 14px;
+
+}
+
+#min, #max {
+	font-family: 'Gilroy Light', sans-serif;
+	font-size: 14px;
+	color: black;
+	opacity: 20%;
+	padding-top: 15px;
+
+    display: flex;
+    position: relative;
+}
+
+#max {
+    left: 55%;
+    margin-left: -50px;
+}
+
+.price-filter {
+	padding-top: 35px;
+}
+
+.price {
+	height: 140px;
+}
 
 
-   body{
-    background: #333;
-  }
-  .slider{
-    width:80%;
-    height:5px;
-    background:#555;
-    position:relative;
-    margin-bottom:50px;
-    margin-left:20px;
-  }
-  .slider .bar{
-    position:absolute;
-    left:50px;
-    width:300px;
-    background:yellow;
-    height:100%;
-  }
-  .slider .bar .lp span{
-      position:relative;
-      left:-30px;
-  }
-  .slider .bar .rp span{
-      position:relative;
-      left:10px;
-  }
-  .slider .bar .lp,.slider .bar .rp{
-    cursor:pointer;
-    background:#555;
-    width:16px;
-    height:16px;
-    border:3px solid yellow;
-    border-radius:100%;
-    position:absolute;
-    line-height:400%;
-    color:white;
-    user-select:none;
-  }
-  .slider .bar .lp{
-    left:0px;
-    top:-8px;
-  }
-  .slider .bar .rp{
-    left:100%;
-    top:-8px;
-  }
+
+
+
+
+
+
+
+

@@ -797,8 +797,11 @@ input.name {
 }
 
 .form-button {
-    width: 760px;
-    margin: 0 auto;
+	width: 200px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    padding: 50px 0 0 100px;
 }
 
 .rect-6 {
@@ -808,8 +811,6 @@ input.name {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 54px;
-    margin-bottom: 73px;
 }
 
 .rect-1:hover, .rect-4:hover, .rect-6:hover {

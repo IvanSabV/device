@@ -4,8 +4,6 @@ function view(n) {
 }
 
 
-
-
 var modal = document.getElementById('write-us');
 
 var btn = document.getElementById("write-but");
@@ -99,31 +97,3 @@ window.onclick = function(event) {
         mapmodal.style.display = "none";
     }
 }
-
-
-var header = document.getElementById("sortin");
-
-var btns = header.getElementsByClassName("sor");
-
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("activ");
-    current[0].className = current[0].className.replace(" activ", "");
-    this.className += " activ";
-  });
-}
-
-
-$( function() {
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 500,
-      values: [ 75, 300 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-      }
-    });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-  } );

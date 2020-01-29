@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="../data/css/jquery-ui.css">
+	  <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/catalog.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="../data/js/jquery-3.4.1.min.js"></script>
-    <script src="../data/js/jquery-ui.js"></script>
-  </head>
+    <script src="js/jquery.js"></script>
+	</head>
   
 <body>
 
@@ -41,7 +42,7 @@
       </div>
     
       <div class="nav-down">
-         <a href="catalog.html" class="catalogbut" onmouseover="view('hidden');">          
+         <a href="catalog.html" class="catalogbut" onmouseover="view('hidden');">
             <span class="cat"> Каталог товаров </span><img src="img/plus.png" alt="" class="plus">
          </a>
         <div class="menu">
@@ -61,15 +62,15 @@
       <div id="hidden" class="navhidden">
         <div class="nav-1">
         <a href="#" class="m-1">Виртуальная реальность</a>
-        <a href="#" class="m-2">Моноподы для селфи</a class="m-1">
-        <a href="#" class="m-3">Экшн-камеры</a class="m-1">
+        <a href="#" class="m-2">Моноподы для селфи</a>
+        <a href="#" class="m-3">Экшн-камеры</a>
       </div>
         <div class="nav-2">
-        <a href="#" class="m-4">Фитнес-браслеты</a class="m-1">
-        <a href="#" class="m-5">Умные часы</a class="m-1">
+        <a href="#" class="m-4">Фитнес-браслеты</a>
+        <a href="#" class="m-5">Умные часы</a>
       </div>
       <div class="nav-3">
-        <a href="#" class="m-6">Квадрокоптеры</a class="m-1">
+        <a href="#" class="m-6">Квадрокоптеры</a>
       </div>
     </div>
     </div>
@@ -86,7 +87,6 @@
         </ul>
     </div>
 
-    
         <div class="catalog-cont">
             <div class="back-con">
                 <div class="content-menu">
@@ -104,8 +104,16 @@
                             </div>
                         </div>
                         <div class="up-down">
-                            <img src="img/icon-up-dir.png" alt="" class="up">
-                            <img src="img/icon-down-dir.png" alt="" class="down">
+                          <label class="contain-up">
+                            <input name="radio-up" type="radio" value="up" checked hidden> 
+                         
+                            <span class="checkmark-up"></span>
+                          </label>
+                          <label class="contain-up">
+                            <input name="radio-up" type="radio" value="down" hidden> 
+                            
+                            <span class="checkmark-up"></span>
+                          </label>
                         </div>
                     </div>
                 </div>
@@ -116,57 +124,53 @@
                     <div class="sub-filter">
                         <div class="price">
                             <div class="line"></div>
-                            <span>Стоимость</span>
+                            <div class="titles">Стоимость</div>
                             <div class="price-filter">
-                              <p>
-                                <label for="amount">Price range:</label>
-                                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-                              </p>
-                               
                               <div id="slider-range"></div>
-                               
-                               
+                              <div class="min-max">
+                                <span id="min"></span>
+                                <span id="max"></span>
+                              </div>
                             </div>
                         </div>
                         <div class="color-f">
                           <div class="line"></div>
-                          <span>Цвет</span>
+                          <div class="titles">Цвет</div>
                           <div class="box">
-                          <label class="contain">Черный
-                            <input type="checkbox" checked hidden>
+                          <label class="contain">
+                            <input type="checkbox" checked hidden>Черный
                             <span class="checkmark"></span>
                           </label>
-                          <label class="contain">Белый
-                            <input type="checkbox" hidden>
+                          <label class="contain">
+                            <input type="checkbox" hidden>Белый
                             <span class="checkmark"></span>
                           </label>
-                          <label class="contain">Синий
-                            <input type="checkbox" hidden>
+                          <label class="contain">
+                            <input type="checkbox" hidden>Синий
                             <span class="checkmark"></span>
                           </label>
-                          <label class="contain">Красный
-                            <input type="checkbox" hidden>
+                          <label class="contain">
+                            <input type="checkbox" hidden>Красный
                             <span class="checkmark"></span>
                           </label>
-                          <label class="contain">Розовый
-                            <input type="checkbox" hidden disabled>
+                          <label class="contain">
+                            <input type="checkbox" hidden disabled>Розовый
                             <span class="checkmark"></span>
                           </label>
                           </div>
                         </div>
                         <div class="bluetooth">
                           <div class="line"></div>
-                          <span>Bluetooth</span>
+                          <div class="titles">Bluetooth</div>
                           <div class="blue">
                             <label class="contain">
                               <input name="radio-btn" type="radio" value="yes" checked hidden> Есть
-                              <span class="checkmark"></span>
+                              <span class="checkmark-r"></span>
                             </label>
                             <label class="contain">
-                              <input name="radio-btn" type="radio" value="no" hidden> Нет
-                              <span class="checkmark"></span>
+                              <input name="radio-btn" type="radio" value="no" hidden> <p>Нет</p>
+                              <span class="checkmark-r"></span>
                             </label>
-                   
                             </div>
                         </div>
                         <div class="btn">
@@ -176,11 +180,9 @@
                             </div> 
                         </a>
                       </div>
-						
-						
-						
                     </div>
                 </div>
+
                 <div class="items">
                     <div class="item-1" >
                       <div class="itemttl">
@@ -270,12 +272,15 @@
 					</div>
 					<div class="backg">
 						<span class="btn-back">назад</span>
-						<ul class="pag">
-							<li class="page-num active">1</li>
-							<li class="page-num">2</li>
-							<li class="page-num">3</li>
-						</ul>
-						<span class="btn-go">вперед</span>
+            <div class="pages">
+            <ul class="pag">
+							<li class="page-num active" onclick="page(1)">1</li>
+							<li class="page-num" onclick="page(2)">2</li>
+							<li class="page-num" onclick="page(3)">3</li>
+            </ul>
+          </div>
+
+            <span class="btn-go">вперед</span>
 					</div>
                 </div>
                 
@@ -297,7 +302,8 @@
       </div>
       <div class="menu-item">
         <div class="user-f">
-          <a href="#"><img src="img/user.png" alt="" class="user-i">Войти</a>
+          <a href="#" class="user"><img src="img/user.png" alt="" class="user-i">Валентин Петухов</a>
+          <a href="#" class="out">Выйти</a>
         </div>
         <div class="compare-f">
             <a href="#"><img src="img/compare.png" alt="" class="compare-i">Сравнить</a>
