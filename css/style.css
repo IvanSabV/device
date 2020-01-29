@@ -461,11 +461,16 @@ h1 {
     justify-content: space-between;
 }
 
-.col-text-1, .col-text-2, .col-text-3, .col-text-4, .col-text-5, .col-text-6 {
+.col-text-1, .col-text-2, .col-text-3, .col-text-4, .col-text-5, .col-text-6, h2 {
     width: 160px;
     font-family: 'Gilroy ExtraBold', sans-serif;
     font-size: 18px;
     padding-top: 39px;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
 }
 
 .col-tex {
