@@ -124,7 +124,7 @@ header {
 }
 
 .nav-down {
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     padding-top: 30px;
@@ -170,7 +170,7 @@ ul {
 }
 
 h1 {
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     font-size: 47px;
     line-height: 56px;
     margin: 0;
@@ -230,7 +230,7 @@ footer {
 }
 
 .menu-2 {
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 18px;
@@ -341,7 +341,7 @@ footer {
 }
 
 h2 {
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 16px;
@@ -417,7 +417,7 @@ h2 {
 }
 
 .button {
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 18px;
@@ -529,7 +529,7 @@ h2 {
 .item-title-price {
 	display: flex;
     padding: 36px 0 8px 0;
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     font-size: 18px;
 	display: flex;
     align-items: baseline;
@@ -551,7 +551,7 @@ h2 {
 }
 
 .btn-back, .btn-go {
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     font-size: 18px;
 	display: flex;
     align-items: baseline;
@@ -570,7 +570,7 @@ h2 {
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-	font-family: 'Gilroy ExtraBold', sans-serif;
+	font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     font-size: 16px;
 	text-transform: uppercase;
     letter-spacing: 4px;
@@ -578,7 +578,7 @@ h2 {
 
 .items li {
 	cursor: pointer;
-	font-family: 'Gilroy ExtraBold', sans-serif;
+	font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     font-size: 16px;
 	text-transform: uppercase;
     letter-spacing: 4px;
@@ -665,7 +665,7 @@ h2 {
 
 
 .titles {
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     font-size: 18px;
 }
 
@@ -842,13 +842,13 @@ input:disabled {
 }
 
 #slider-range span {
-	font-family: 'Gilroy Light', sans-serif;
+	font-family: 'Gilroy Light', 'Open Sans Light', sans-serif;
     font-size: 14px;
 
 }
 
 #min, #max {
-	font-family: 'Gilroy Light', sans-serif;
+	font-family: 'Gilroy Light', 'Open Sans Light', sans-serif;
 	font-size: 14px;
 	color: black;
 	opacity: 20%;

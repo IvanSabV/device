@@ -111,7 +111,7 @@ header {
 }
 
 .nav-down {
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     padding-top: 30px;
@@ -228,7 +228,7 @@ ul {
 }
 
 h1 {
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     font-size: 47px;
     line-height: 56px;
     margin: 0;
@@ -249,7 +249,7 @@ h1 {
 }
 
 .button, .button-d {
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 18px;
@@ -321,7 +321,7 @@ h1 {
 .num {
     font-size: 179px;
     color: #fff;
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     position: absolute;
     bottom: 77%;
     left: 68%;
@@ -330,7 +330,7 @@ h1 {
 .num-2 {
     font-size: 179px;
     color: #fff;
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     position: absolute;
     bottom: 77%;
     left: 63%;
@@ -339,14 +339,14 @@ h1 {
 .num-3 {
     font-size: 179px;
     color: #fff;
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     position: absolute;
     bottom: 77%;
     left: 60%;
 }
 
 .ch {
-    font-family: 'Gilroy Light', sans-serif;
+    font-family: 'Gilroy Light', 'Open Sans Light', sans-serif;
     font-size: 36px;
     margin: 0;
 }
@@ -463,7 +463,7 @@ h1 {
 
 .col-text-1, .col-text-2, .col-text-3, .col-text-4, .col-text-5, .col-text-6, h2 {
     width: 160px;
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     font-size: 18px;
     padding-top: 39px;
 }
@@ -560,7 +560,7 @@ h2 {
 
 
 h3 {
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     font-size: 47px;
     margin: 0;
 }
@@ -708,7 +708,7 @@ h3 {
 }
 
 .form-text {
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     font-size: 18px;
     display: flex;
     flex-direction: column;
@@ -773,7 +773,7 @@ input.name {
 }
 
 .form-mess {
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     font-size: 18px;
     display: flex;
     flex-direction: column;
@@ -846,7 +846,7 @@ input.name {
 }
 
 .about-text3 {
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     font-size: 16px;
 }
 
@@ -932,7 +932,7 @@ footer {
 }
 
 .menu-2 {
-    font-family: 'Gilroy ExtraBold', sans-serif;
+    font-family: 'Gilroy ExtraBold', 'Open Sans ExtraBold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 18px;
